@@ -1,0 +1,10 @@
+D:\AIE\2 - Maths\Repos\Test Math Library\9-3-Test Math Library\Libraries\netstandard2.0\MathLibrary.deps.json
+D:\AIE\2 - Maths\Repos\Test Math Library\9-3-Test Math Library\Libraries\netstandard2.0\MathLibrary.pdb
+D:\AIE\2 - Maths\Repos\Uni_MathLibrary\MathLibrary\MathLibrary\obj\Release\netstandard2.0\MathLibrary.AssemblyInfoInputs.cache
+D:\AIE\2 - Maths\Repos\Uni_MathLibrary\MathLibrary\MathLibrary\obj\Release\netstandard2.0\MathLibrary.AssemblyInfo.cs
+D:\AIE\2 - Maths\Repos\Uni_MathLibrary\MathLibrary\MathLibrary\obj\Release\netstandard2.0\MathLibrary.dll
+D:\AIE\2 - Maths\Repos\Uni_MathLibrary\MathLibrary\MathLibrary\obj\Release\netstandard2.0\MathLibrary.pdb
+D:\AIE\2 - Maths\Repos\Uni_MathLibrary\MathLibrary\MathLibrary\obj\Release\netstandard2.0\MathLibrary.csprojAssemblyReference.cache
+D:\AIE\2 - Maths\Repos\Uni_MathLibrary\MathLibrary\MathLibrary\bin\Release\netstandard2.0\MathLibrary.deps.json
+D:\AIE\2 - Maths\Repos\Uni_MathLibrary\MathLibrary\MathLibrary\bin\Release\netstandard2.0\MathLibrary.dll
+D:\AIE\2 - Maths\Repos\Uni_MathLibrary\MathLibrary\MathLibrary\bin\Release\netstandard2.0\MathLibrary.pdb

@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\AIE\\2 - Maths\\MathLibrary\\MathLibrary\\MathLibrary.csproj",
+      "projectUniqueName": "D:\\AIE\\2 - Maths\\Repos\\Uni_MathLibrary\\MathLibrary\\MathLibrary\\MathLibrary.csproj",
       "projectName": "MathLibrary",
-      "projectPath": "D:\\AIE\\2 - Maths\\MathLibrary\\MathLibrary\\MathLibrary.csproj",
+      "projectPath": "D:\\AIE\\2 - Maths\\Repos\\Uni_MathLibrary\\MathLibrary\\MathLibrary\\MathLibrary.csproj",
       "packagesPath": "C:\\Users\\s210366\\.nuget\\packages\\",
-      "outputPath": "D:\\AIE\\2 - Maths\\MathLibrary\\MathLibrary\\obj\\",
+      "outputPath": "D:\\AIE\\2 - Maths\\Repos\\Uni_MathLibrary\\MathLibrary\\MathLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\s210366\\AppData\\Roaming\\NuGet\\NuGet.Config",
