@@ -61,31 +61,30 @@ namespace MathLibrary
 
 			return result;
 		}
+
+		//Member methods
+		
+		//Normalise this vector
+		void Normalise()
+		{
+
+		}
+
+		void setRotateX(float _value)
+		{
+
+		}
+
+		void setRotateY(float _value)
+		{
+
+		}
+
+		void setRotateZ(float _value)
+		{
+
+		}
 	}
 
-	/* ----------------------------------------------------------------------------------------
-	NOTES:
-	Vector4 are the ones used in graphics cards
-	They are more efficient for math use and allow Matrix4 to be multiplied by the Vector
-	Vector4(x, y, z, w) w = 0 -> directional, w = 1 -> point
-	*/
-
-	/* ----------------------------------------------------------------------------------------
-	Minumum requirements for assignment:
-
-    V = V + V (point translated by a vector)
-    V = V – V (point translated by a vector)
-    V = V x f (vector scale)
-    V = f x V (vector scale)
-    V = M x V (vector transformation) -> goes into Matrix class usually
-    M = M x M (matrix concatenation) -> //    //   //     //    //
-    f = V.Dot( V )
-    V = V.Cross( V )
-    f = V.Magnitude()
-    Normalise()
-    setRotateX( f )
-    setRotateY( f ) and
-    setRotateZ( f )
-
-	 */
+	
 }
