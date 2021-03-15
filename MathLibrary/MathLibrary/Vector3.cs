@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MathLibrary
+namespace MathClasses
 {
 	public struct Vector3
 	{
@@ -63,27 +63,32 @@ namespace MathLibrary
 		}
 
 		//Member methods
+		public float Magnitude()
+		{
+			return (float)Math.Sqrt(x * x + y * y + z * z);
+		}
+
+		public void Normalise()
+		{
+			float magnitude = Magnitude();
+
+			if (magnitude != 0)
+			{
+				x /= magnitude;
+				y /= magnitude;
+				z /= magnitude;
+			}
+		}
+
+		public Vector3 Cross(Vector3 _vec)
+		{
+			Vector3 result;
+			result.x = y * _vec.z - z * _vec.y;
+			result.y = z * _vec.x - x * _vec.z;
+			result.z = x * _vec.y - y * _vec.x;
+			return result;
+		}
 		
-		//Normalise this vector
-		void Normalise()
-		{
-
-		}
-
-		void setRotateX(float _value)
-		{
-
-		}
-
-		void setRotateY(float _value)
-		{
-
-		}
-
-		void setRotateZ(float _value)
-		{
-
-		}
 	}
 
 	

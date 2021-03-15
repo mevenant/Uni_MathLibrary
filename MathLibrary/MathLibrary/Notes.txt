@@ -3,25 +3,74 @@
 |x| Vector4 default constructor and constructors that allow each float element to be set individually
 | | Matrix3 default constructor and constructors that allow each float element to be set individually
 | | Matrix4 default constructor and constructors that allow each float element to be set individually
-| | Colour default constructor and constructors that allow each float element to be set individually
+| | Colour default constructor and constructors that allow each byte element to be set individually
 
+| | Your Colour class will have get and set functions for each colour component that employ bit shifting and bitwise operators to query or modify the individual colour components of the 4 byte integer. For example:
 
+    char GetRed();
+    void SetRed(byte value);
+
+----------------------------------------------
 NOTES:
 Vector4 are the ones used in graphics cards
 They are more efficient for math use and allow Matrix4 to be multiplied by the Vector
 Vector4(x, y, z, w) w = 0 -> directional, w = 1 -> point
+
+Cross:
+given two vector, what are the perpendicular vectors (two possibilities)
+
+--
+
+binary and bytes
+		//bits stands for binary digits
+
+byte gunsUnlocked = 0;
+
+byte gun1Mask = 1; //00000001
+byte gun2Mask = 2; //00000010
+byte gun3Mask = 4; //00000100
+byte gun4Mask = 8; //00001000
+byte gun5Mask = 16; //00010000
+
+//add
+gunsUnlocked = gunsUnlocked | gun3Mask;
+
+//check
+if ((gunsUnlocked & gun3Mask) > 0) {
+	//Player has the machine gun
+}
+
+//toggle
+gunsUnlocked = gunsUnlocked ^ gun3Mask;
+
+
+//shift ---> all of these operations are usually done on unsigned bits otherwise shift will discard some data
+int value = 23 << 1;
+-- same as
+int value = 23 * 2;
+value = value >> 2;	//divide by two
+
+
+----------------------------------------------
 Minumum requirements for assignment:
 
+//vectors
 V = V + V (point translated by a vector)
 V = V – V (point translated by a vector)
 V = V x f (vector scale)
 V = f x V (vector scale)
+
+//matrix
 V = M x V (vector transformation) -> goes into Matrix class usually
 M = M x M (matrix concatenation) -> //    //   //     //    //
+
+//vectors
 f = V.Dot( V )
 V = V.Cross( V )
 f = V.Magnitude()
 Normalise()
+
+//matrix
 setRotateX( f )
 setRotateY( f )
 setRotateZ( f )

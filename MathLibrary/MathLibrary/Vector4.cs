@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MathLibrary
+namespace MathClasses
 {
 	public struct Vector4
 	{
@@ -65,6 +65,32 @@ namespace MathLibrary
 			result.y = _vec.y * _float;
 			result.z = _vec.z * _float;
 			result.w = _vec.w * _float;
+
+			return result;
+		}
+
+		//Member variables
+		public float Magnitude()
+		{
+			return (float)Math.Sqrt(x * x + y * y + z * z + w * w);
+		}
+
+		public void Normalise()
+		{
+			float magnitude = Magnitude();
+			x /= magnitude;
+			y /= magnitude;
+			z /= magnitude;
+			w /= magnitude;
+		}
+
+		public Vector4 Cross(Vector4 _vec)
+		{
+			Vector4 result;
+			result.x = y * _vec.z - z * _vec.y;
+			result.y = z * _vec.x - x * _vec.z;
+			result.z = x * _vec.y - y * _vec.x;
+			result.w = 0;	//?
 
 			return result;
 		}
