@@ -97,5 +97,68 @@ namespace MathClasses
 
 			return result;
 		}
+
+		
+		public void SetRotationX(float _radians)
+		{
+			m[0] = 1;
+			m[1] = 0;
+			m[2] = 0;
+			m[3] = 0;
+			m[4] = 0;
+			m[5] = (float)Math.Cos(_radians);
+			m[6] = -(float)Math.Sin(_radians);
+			m[7] = 0;
+			m[8] = 0;
+			m[9] = (float)Math.Sin(_radians);
+			m[10] = (float)Math.Cos(_radians);
+			m[11] = 0;
+			m[12] = 0;
+			m[13] = 0;
+			m[14] = 0;
+			m[15] = 1;
+		}
+
+		
+		
+		public void SetRotationY(float _radians)
+		{
+			m[0] = (float)Math.Cos(_radians);
+			m[1] = 0;
+			m[2] = (float)Math.Sin(_radians);
+			m[3] = 0;
+			m[4] = 0;
+			m[5] = 1;
+			m[6] = 0;
+			m[7] = 0;
+			m[8] = -(float)Math.Sin(_radians);
+			m[9] = 0;
+			m[10] = (float)Math.Cos(_radians);
+			m[11] = 0;
+			m[12] = 0;
+			m[13] = 0;
+			m[14] = 0;
+			m[15] = 1;
+		}
+
+		public void SetRotationZ(float _radians)
+		{
+			m[0] = (float)Math.Cos(_radians);
+			m[1] = -(float)Math.Sin(_radians);
+			m[2] = 0;
+			m[3] = 0;
+			m[4] = (float)Math.Sin(_radians);
+			m[5] = (float)Math.Cos(_radians);
+			m[6] = 0;
+			m[7] = 0;
+			m[8] = 0;
+			m[9] = 0;
+			m[10] = 1;
+			m[11] = 0;
+			m[12] = 0;
+			m[13] = 0;
+			m[14] = 0;
+			m[15] = 1;
+		}
 	}
 }

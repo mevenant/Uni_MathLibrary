@@ -20,7 +20,8 @@ namespace MathClasses
 
 		public void SetRed(byte red)
 		{
-			colour &= 0xFF000000;
+			//RGBA
+			colour &= 0x00FFFFFF;
 			colour |= (uint)(red << 24);
 		}
 

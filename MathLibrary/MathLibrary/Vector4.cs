@@ -90,7 +90,7 @@ namespace MathClasses
 			result.x = y * _vec.z - z * _vec.y;
 			result.y = z * _vec.x - x * _vec.z;
 			result.z = x * _vec.y - y * _vec.x;
-			result.w = 0;	//?
+			result.w = 0;
 
 			return result;
 		}

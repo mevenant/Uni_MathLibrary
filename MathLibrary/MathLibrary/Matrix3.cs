@@ -6,8 +6,9 @@ namespace MathClasses
 {
 	public struct Matrix3
 	{
-		public float[] m;
 
+		public float[] m;
+		//Note that even though this is a struct, 
 		public Matrix3(bool _default = true)
 		{
 			m = new float[9];
@@ -94,14 +95,50 @@ namespace MathClasses
 			return result;
 		}
 
+		//Rotate around X
 		public void SetRotationX(float _radians)
 		{
+			//X doesn't change
+			m[0] = 1;
+			m[1] = 0;
+			m[2] = 0;
+			m[3] = 0;
 			m[4] = (float)Math.Cos(_radians);
-			m[5] = (float)-Math.Sin(_radians);
+			m[5] = -(float)Math.Sin(_radians);
+			m[6] = 0;
 			m[7] = (float)Math.Sin(_radians);
 			m[8] = (float)Math.Cos(_radians);
 		}
 
+		//Rotate around Y
+		public void SetRotationY(float _radians)
+		{
+			//Y doesn't change
+			m[0] = (float)Math.Cos(_radians);
+			m[1] = 0;
+			m[2] = (float)Math.Sin(_radians);
+			m[3] = 0;
+			m[4] = 1;
+			m[5] = 0;
+			m[6] = -(float)Math.Sin(_radians);
+			m[7] = 0;
+			m[8] = (float)Math.Cos(_radians);
+		}
+
+		//Rotate aruond Z
+		public void SetRotationZ(float _radians)
+		{
+			//Z doesn't change
+			m[0] = (float)Math.Cos(_radians);
+			m[1] = -(float)Math.Sin(_radians);
+			m[2] = 0;
+			m[3] = (float)Math.Sin(_radians);
+			m[4] = (float)Math.Cos(_radians);
+			m[5] = 0;
+			m[6] = 0;
+			m[7] = 0;
+			m[8] = 1;
+		}
 
 		public void setScale(float scale)
 		{
@@ -113,22 +150,7 @@ namespace MathClasses
 			
 		}
 		/*
-		 public void SetRotateX(float fRadians)
-		{
-			m[4] = (float)Math.Cos(fRadians);
-			m[5] = (float)-Math.Sin(fRadians);
-			m[7] = (float)Math.Sin(fRadians);
-			m[8] = (float)Math.Cos(fRadians);
-		}
-
-		public void SetRotateY(float fRadians)
-		{
-		}
-
-		public void SetRotateZ(float fRadians)
-		{
-		}
-
+		
 		//Extra helpful functions
 		public void SetTranslation(float x, float y)
 		{

@@ -80,6 +80,7 @@ namespace MathClasses
 			}
 		}
 
+
 		public Vector3 Cross(Vector3 _vec)
 		{
 			Vector3 result;
