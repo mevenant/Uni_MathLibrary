@@ -117,10 +117,10 @@ namespace MathClasses
 
 		public float GetAngle()
 		{
-			//float A = Dot(new Vector2(1, 0));
-			//return (float)Math.Acos(A / Magnitude());
+			float dot = Dot(new Vector2(1, 0));
+			return (float)Math.Acos(dot);
 
-			return GetAngleBetween(this, new Vector2(1, 0));
+			//return GetAngleBetween(this, new Vector2(1, 0));
 		}
 
 		public static float GetAngleBetween(Vector2 _vec1, Vector2 _vec2)
