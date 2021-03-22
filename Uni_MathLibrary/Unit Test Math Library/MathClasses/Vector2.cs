@@ -99,10 +99,54 @@ namespace MathClasses
 			y = (float)Math.Sin(_radians);
 		}
 
+
+		public float NormalizeAndDot(Vector2 _vec)
+		{
+			var normalized = new Vector2(x, y);
+			return normalized.x * _vec.x + normalized.y * _vec.y;
+		}
+
+		//This function only works in 2D
+		public Vector2 GetPerpendicular()
+		{
+			Vector2 result;
+			result.x = -y;
+			result.y = x;
+			return result;
+		}
+
 		public float GetAngle()
 		{
-			float A = Dot(new Vector2(1, 0));
-			return (float)Math.Acos(A / Magnitude());
+			//float A = Dot(new Vector2(1, 0));
+			//return (float)Math.Acos(A / Magnitude());
+
+			return GetAngleBetween(this, new Vector2(1, 0));
+		}
+
+		public static float GetAngleBetween(Vector2 _vec1, Vector2 _vec2)
+		{
+			//Get the dot product of our two vectors
+			_vec1.Normalize();
+			_vec2.Normalize();
+			float fDot = _vec1.Dot(_vec2);
+
+			//Get angle
+			float angle = (float)Math.Acos(fDot);
+
+			//Get the dot product of one of the vectors and another vector at right angles
+			Vector2 rightAngle = _vec1.GetPerpendicular();
+			float fRightDot = _vec1.Dot(rightAngle);
+			
+			if (fRightDot < 0)
+				angle = angle * -1f;
+
+			return angle;
+
+		}
+
+		public float GetAngleDegree()
+		{
+			return GetAngle() * 180 / (float)Math.PI;
 		}
 	}
 }

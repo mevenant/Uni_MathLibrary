@@ -12,3 +12,9 @@ D:\AIE\2 - Maths\Repos\Uni_YR1_Tank-Game\RaylibStarter2\Libraries\MathClasses.dl
 D:\AIE\2 - Maths\Repos\Uni_YR1_Tank-Game\RaylibStarter2\Libraries\MathClasses.dll
 D:\AIE\2 - Maths\Repos\Uni_YR1_Tank-Game\RaylibStarter2\Libraries\MathClasses.pdb
 D:\AIE\2 - Maths\Repos\Uni_MathLibrary\Unit Test Math Library\MathClasses\obj\Debug\MathClasses.csprojAssemblyReference.cache
+D:\AIE\2 - Maths\Repos\Uni_MathLibrary\Uni_YR1_Tank-Game\RaylibStarter2\Libraries\MathClasses.dll.config
+D:\AIE\2 - Maths\Repos\Uni_MathLibrary\Uni_YR1_Tank-Game\RaylibStarter2\Libraries\MathClasses.dll
+D:\AIE\2 - Maths\Repos\Uni_MathLibrary\Uni_YR1_Tank-Game\RaylibStarter2\Libraries\MathClasses.pdb
+D:\AIE\2 - Maths\Repos\Uni_MathLibrary\Uni_MathLibrary\Unit Test Math Library\MathClasses\obj\Debug\MathClasses.csprojAssemblyReference.cache
+D:\AIE\2 - Maths\Repos\Uni_MathLibrary\Uni_MathLibrary\Unit Test Math Library\MathClasses\obj\Debug\MathClasses.dll
+D:\AIE\2 - Maths\Repos\Uni_MathLibrary\Uni_MathLibrary\Unit Test Math Library\MathClasses\obj\Debug\MathClasses.pdb
