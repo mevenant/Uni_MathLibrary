@@ -10,6 +10,10 @@ namespace MathClasses
 	{
 		public float x, y;
 		public static Vector2 ZERO = new Vector2();
+		public static Vector2 UP = new Vector2(0, 1);
+		public static Vector2 LEFT = new Vector2(-1, 0);
+		public static Vector2 RIGHT = new Vector2(1, 0);
+		public static Vector2 DOWN = new Vector2(0, -1);
 		//constructor
 		public Vector2(float _x = 0.0f, float _y = 0.0f)
 		{

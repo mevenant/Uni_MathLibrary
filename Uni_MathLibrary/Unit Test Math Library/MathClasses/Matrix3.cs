@@ -101,6 +101,20 @@ namespace MathClasses
 			return result;
 		}
 
+		//Reset to identity matrix
+		public void Reset()
+		{
+			m1 = 1;
+			m2 = 0;
+			m3 = 0;
+			m4 = 0;
+			m5 = 1;
+			m6 = 0;
+			m7 = 0;
+			m8 = 0;
+			m9 = 1;
+		}
+
 		//Rotate around X
 		public void SetRotateX(float _radians)
 		{
