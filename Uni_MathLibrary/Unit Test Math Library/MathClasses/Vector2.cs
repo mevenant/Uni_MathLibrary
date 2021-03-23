@@ -71,6 +71,24 @@ namespace MathClasses
 			return (_vec1.x != _vec2.x) || (_vec1.y != _vec2.y);
 		}
 
+		public override bool Equals(object obj)
+		{
+			bool result = false;
+			if (obj is Vector2 vec)
+				result = this == vec;
+			return result;
+		}
+
+		public override int GetHashCode()
+		{
+			return (int)(x - y);
+		}
+
+		public override string ToString()
+		{
+			return "(" + x + ", " + y + ")";
+		}
+
 		//Member methods
 		public float Magnitude()
 		{
@@ -117,10 +135,10 @@ namespace MathClasses
 
 		public float GetAngle()
 		{
-			float dot = Dot(new Vector2(1, 0));
-			return (float)Math.Acos(dot);
+			//float dot = Dot(new Vector2(1, 0));
 
-			//return GetAngleBetween(this, new Vector2(1, 0));
+			return (float)Math.Atan2(x, y);
+			//return (float)Math.Acos(dot);
 		}
 
 		public static float GetAngleBetween(Vector2 _vec1, Vector2 _vec2)

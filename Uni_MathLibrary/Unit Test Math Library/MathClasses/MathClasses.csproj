@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\Uni_YR1_Tank-Game\RaylibStarter2\Libraries\</OutputPath>
+    <OutputPath>..\..\..\..\Uni_YR1_Tank-Game\RaylibStarter2\Libraries\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>

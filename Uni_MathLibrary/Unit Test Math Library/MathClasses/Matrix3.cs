@@ -8,7 +8,7 @@ namespace MathClasses
 	{
 		public float m1, m2, m3, m4, m5, m6, m7, m8, m9;
 		//Note that even though this is a struct, 
-		public Matrix3(bool _default)
+		public Matrix3(bool identity)
 		{
 			m1 = 1;
 			m2 = 0;
@@ -166,6 +166,20 @@ namespace MathClasses
 		public Vector2 GetPosition()
 		{
 			return new Vector2(m7, m8);
+		}
+
+		public Vector2 GetUp()
+		{
+			var result = new Vector2(m4, m5);
+			result.Normalize();
+			return result;
+		}
+
+		public Vector2 GetRight()
+		{
+			var result = new Vector2(m1, m2);
+			result.Normalize();
+			return result;
 		}
 	}
 }
