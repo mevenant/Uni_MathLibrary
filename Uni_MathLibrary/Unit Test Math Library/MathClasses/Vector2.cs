@@ -170,5 +170,23 @@ namespace MathClasses
 		{
 			return GetAngle() * 180 / (float)Math.PI;
 		}
+
+		public Vector2 Lerp(Vector2 _start, Vector2 _end, float _scaler)
+		{
+			Vector2 result;
+
+			//clamp _scaler
+			if (_scaler > 1)
+				_scaler = 1;
+			else if (_scaler < 0)
+				_scaler = 0;
+
+			float difference = _end.x - _start.x;
+			result.x = _start.x + difference * _scaler;
+			difference = _end.y - _start.y;
+			result.y = _start.y + difference * _scaler;
+
+			return result;
+		}
 	}
 }

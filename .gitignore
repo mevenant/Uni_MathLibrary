@@ -1,2 +1,6 @@
 
 Uni_MathLibrary/Unit Test Math Library/.vs/UnitTest/v16/.suo
+
+*.ide-wal
+
+*.ide-shm
