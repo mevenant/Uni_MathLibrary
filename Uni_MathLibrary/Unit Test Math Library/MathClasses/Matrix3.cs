@@ -160,9 +160,20 @@ namespace MathClasses
 			m9 = 1;
 		}
 
-		public void SetScale(float scale)
+		public void SetScale(float _scale)
 		{
+			Matrix3 scale_matrix = new Matrix3();
+			scale_matrix.m1 = _scale;
+			scale_matrix.m2 = _scale;
+			this = this * scale_matrix;
+		}
 
+		public void SetScale(Vector2 _scale)
+		{
+			Matrix3 scale_matrix = new Matrix3();
+			scale_matrix.m1 = _scale.x;
+			scale_matrix.m2 = _scale.y;
+			this = this * scale_matrix;
 		}
 
 		public void SetPosition(Vector3 _position_vector)
