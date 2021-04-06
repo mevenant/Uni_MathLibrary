@@ -54,6 +54,31 @@ namespace UnitTestProject
 			return true;
 		}
 
+		// -------------------------- //
+		// Binary Conversion Exercise //
+		// -------------------------- //
+
+		[TestMethod]
+		public void BinaryConversion_SetRed()
+        {
+			Colour c = new Colour();
+			c.SetRed(0x5E);
+			Assert.AreEqual<UInt32>(c.colour, 0x5E000000);
+		}
+
+		[TestMethod]
+		public void BinaryConversion_ShiftRedToGreen()
+		{
+			Colour c = new Colour();
+			c.SetRed(0x5E);
+			c.colour = c.colour >> 8;
+			Assert.AreEqual<UInt32>(c.colour, 0x005E0000);
+		}
+
+		// --------------------------------- //
+		// End Of Binary Conversion Exercise //
+		// --------------------------------- //
+
 		[TestMethod]
 		public void Vector3Addition()
 		{
